@@ -1,0 +1,120 @@
+
+#wrapper{
+
+    background-color:black;
+    width: 690px;
+    height: 820px;
+    padding: 10px;;
+}
+#position{
+    width: 800px;
+    height: 140px;
+    margin: auto;
+}
+
+
+#heading{
+    width: 600px;
+    height: 140px;
+    margin-left: 30px;
+}
+
+#leftPic, #middleText, #rightPic{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+
+#leftPic{
+    background-image:url("images/adventure-cat.png");
+    width:100px;
+    height:100px;
+    background-size: contain;
+}
+#middleText{
+    width:350px;
+    height:50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px red;
+    
+}
+#rightPic{
+
+    background-image:url("images/catandninja.png");
+    width:98px;
+    height:70px;
+    background-size: contain;
+   
+}
+
+
+
+#fi,#se,#thi,#fo{
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display:inline-block;
+    border: 3px solid gold;
+
+}
+#fit,#six,#sev,#ei{
+
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display:inline-block;
+    border: 3px solid gold;
+
+}
+#ni,#te,#el,#tw{
+
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display:inline-block;
+    border: 3px solid gold;
+
+}
+#th,#for,#fif,#sixt{
+
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display:inline-block;
+    border: 3px solid gold;
+}
+
+#fi{ background-image: url("images/aidorucat.png");}
+#se{background-image: url("images/chellocat.jpg");}
+#thi{background-image: url("images/cherry.jpg");}
+#fo{background-image: url("images/coder2.jpg");}
+#fit{background-image: url("images/codercat.jpg");}
+#six{background-image: url("images/daftpunk.gif");}
+#sev{background-image: url("images/defunktocat.png");}
+#ei{background-image: url("images/dojocat.jpg");}
+#ni{background-image: url("images/domo-cat.png");}
+#te{background-image: url("images/github.jpg");}
+#el{background-image: url("images/heisencat.png");}
+#ei{background-image: url("images/ironcat.png");}
+#ni{background-image: url("images/jean-luc-picat.jpg");}
+#te{background-image: url("images/kantana.jpg");}
+#el{background-image: url("images/linkcat.png");}
+#tw{background-image: url("images/mario.png");}
+#th{background-image: url("images/octobiwan.jpg");}
+#for{background-image: url("images/oktobercat.png");}
+#fif{background-image: url("images/riddlocat.png");}
+#sixt{background-image: url("images/stormtroopocat.png");}
