@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The hottest electic car right now and the reason eveyone love it">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Why buy a Tesla?</title>
+   
+
+    <style>
+         img{
+        width: 400px;
+        transition: width 1s;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        img:hover{
+            width: 450px;
+        }
+        th,td{
+        padding: 20px;
+       }
+        table, th, td {
+        border: 1px solid black;
+        background-color:white;
+        transition: background-color 1s;
+        }
+        td:hover{
+            background-color: rgb(209, 209, 209);
+        }
+        #bold{
+            font-weight: bold;
+        }
+    
+        p{
+            font-weight: bold;
+            font-family:'Courier New', Courier, monospace
+        }
+        #niceFont{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #logo{
+            width: 100px;
+            
+        }
+        #carTitle{
+            font-weight: bold;
+            text-shadow: 1px 1px black;
+            color: red;
+            font-size: 25px;
+            
+        }
+        #submitButton{
+            width: 90px;     
+        }
+       
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Why Buy a Tesla?</h1>
+        
+    <p>Choose Car for more information:</p>
+
+    <form action="process.php" method="post" name="myForm"></form>
+
+        <input type="radio" id="models" name="tesla" value="1" onclick="correctStat()" checked="checked">
+        <label for="models"><img src="pic/tesla1.jpg" alt="Model S"></label>
+        
+        <input type="radio" id="modelx" name="tesla" value="2" onclick="correctStat()">
+        <label for="modelx"><img src="pic/tesla2.jpg" alt="Model X"></label>
+            
+        <input type="radio" id="model3" name="tesla" value="3" onclick="correctStat()">
+        <label for="model3"><img src="pic/tesla3.jpg" alt="Model 3"></label>
+       
+        <!-- cellpadding="20" -->
+    
+      
+        <div>
+            <p id="carTitle">Model S Specs:</p><br>
+
+            <table >
+                <thead>
+                    <th> </th>
+                    <th>P100D</th>
+                    <th>100D</th>
+                    <th>75D</th>
+                </thead>
+                <tbody>
+                    <tr id="battery">
+                        <td id="bold">Battery</td>
+                        <td>100kWh</td>
+                        <td>100kWh</td>
+                        <td>75kWh</td>
+                    </tr>
+                    <tr id="Acc">
+                         <td id="bold">Acceleration</td>
+                         <td>2.5 second 0-60 mph</td>  
+                         <td>4.1 second 0-60 mph</td>
+                         <td>4.2 second 0-60 mph</td>       
+                    </tr>
+                    <tr id="mile">
+                        <td id="bold">Range</td>
+                        <td>315 miles</td>
+                        <td>335 miles</td>
+                        <td>259 miles</td>   
+                    </tr>
+                    <tr id="wheels">
+                        <td id="bold">Wheels</td>
+                        <td>19" or 21"</td>
+                        <td>19" or 21"</td>
+                        <td>19" or 21"</td>
+                    </tr>
+                    
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <p>Other amazing aspects all the car share:</p>
+
+        <ul id="niceFont">
+            <li>The higgest safety rating ever, with the lowest probabilty of occupant injury</li>
+            <li>Dual Motor All-whell Drive instantly controls traction and torque, in all weather conditions</li>
+            <li>Excellent Autopilot with ultrasonic sensors</li>
+            <li>They all look awesome :) </li>
+        </ul>
+
+        <a href="https://www.youtube.com/watch?v=aeL2c1eR4hU"> Click for an awesome video</a>
+
+        <h3>Please take this short survey</h3>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br>
+
+        <p>Do you wish to receive more email about Tesla?</p>
+
+        <input type="radio" id="moreEmail" name="moreEmail">
+        <label for="moreEmail"> Yes, please send more article about Tesla</label>
+        
+        <input type="radio" id="moreEmail" name="moreEmail">
+        <label for="moreEmail"> No, don't send more article about Tesla</label>
+      
+
+        <p>How did you hear about us?</p>
+        <label for="facebook">Facebook</label>
+        <input type="checkbox" id="facebook" name="facebook" value="facebook">
+
+		<label for="twitter">Twitter</label>
+        <input type="checkbox" id="twitter" name="twitter" value="twitter">
+        
+		<label for="Youtube">Youtube</label>
+        <input type="checkbox" id="Youtube" name="Youtube" value="Youtube">
+
+        <label for="instagram">Instagram</label>
+        <input type="checkbox" id="instagram" name="instagram" value="instagram"><br><br>
+        
+        
+        <input type="submit" value="Submit" id="submitButton">
+
+        <p>Go to Tesla.com NOW!!!</p>
+        <a href="http://www.tesla.com"><img src="pic/logo.png" alt="Tesla logo" id="logo"></a>
+    </form>
+
+   
+    
+
+    <script>
+
+        let teslaCars={
+            battery:[[100,100,75],[100,100,75],["Long Range","Standard"]],    
+            Acceleration:[[2.5,4.1,4.2],[2.9,4.7,4.9],[3.5,4.5,5.1]],
+            Range:[[315,335,259],[289,295,237],[310,310,215]],
+            Wheels:["19 to 21","20 to 22",["18 to 20","18 or 19"]]
+        }
+    
+        let AccAmount=teslaCars.Acceleration;
+        let battery=teslaCars.battery;
+        let range=teslaCars.Range;
+        let wheel=teslaCars.Wheels;
+
+        
+        function changeInfo(value){
+
+            if(value==1)//modelS
+            {
+                let titleOutput="Model S Specs";
+                let accelerationOutput= "<td id='bold'>Acceleration</td><td>"+AccAmount[0][0]+" second 0-60 mph</td><td>"+AccAmount[0][1]+" second 0-60 mph</td><td>"+AccAmount[0][2]+" second 0-60 mph</td> ";
+                let batteryOutput= "<td id='bold'>Battery</td><td>"+battery[0][0]+"kWh</td> <td>"+battery[0][1]+"kWh</td><td>"+battery[0][2]+"kWh</td>";
+                let rangeOutput= "<td id='bold'>Range</td><td>"+range[0][0]+" miles</td><td>"+range[0][1]+" miles</td><td>"+range[0][2]+" miles</td>  ";
+                let wheelOuput= "<td id=bold>Wheels</td><td>"+wheel[0]+"</td><td>"+wheel[0]+"</td><td>"+wheel[0]+"</td>";
+
+                document.getElementById("Acc").innerHTML=accelerationOutput;
+                document.getElementById("battery").innerHTML=batteryOutput;
+                document.getElementById("mile").innerHTML=rangeOutput;
+                document.getElementById("wheels").innerHTML=wheelOuput;
+                document.getElementById("carTitle").innerHTML=titleOutput;
+            }
+            else if(value==2)//modelX
+            {
+                let titleOutput="Model X Specs";
+                let accelerationOutput= "<td id='bold'>Acceleration</td><td>"+AccAmount[1][0]+" second 0-60 mph</td><td>"+AccAmount[1][1]+" second 0-60 mph</td><td>"+AccAmount[1][2]+" second 0-60 mph</td> ";
+                let batteryOutput= "<td id='bold'>Battery</td><td>"+battery[1][0]+"kWh</td> <td>"+battery[1][1]+"kWh</td><td>"+battery[1][2]+"kWh</td>"; 
+                let rangeOutput= "<td id='bold'>Range</td><td>"+range[1][0]+" miles</td><td>"+range[1][1]+" miles</td><td>"+range[1][2]+" miles</td>  ";
+                let wheelOuput= "<td id=bold>Wheels</td><td>"+wheel[1]+"</td><td>"+wheel[1]+"</td><td>"+wheel[1]+"</td>";
+
+
+                document.getElementById("Acc").innerHTML=accelerationOutput;
+                document.getElementById("battery").innerHTML=batteryOutput;
+                document.getElementById("mile").innerHTML=rangeOutput;
+                document.getElementById("wheels").innerHTML=wheelOuput;
+                document.getElementById("carTitle").innerHTML=titleOutput;
+                
+            }
+            else if(value==3)//model3
+            {
+                let titleOutput="Model 3 Specs";
+                let accelerationOutput= "<td id='bold'>Acceleration</td><td>"+AccAmount[2][0]+" second 0-60 mph</td><td>"+AccAmount[2][1]+" second 0-60 mph</td><td>"+AccAmount[2][2]+" second 0-60 mph</td> ";
+                let batteryOutput= "<td id='bold'>Battery</td><td>"+battery[2][0]+"</td> <td>"+battery[2][0]+"</td><td>"+battery[2][1]+"</td>"; 
+                let rangeOutput= "<td id='bold'>Range</td><td>"+range[2][0]+" miles</td><td>"+range[2][1]+" miles</td><td>"+range[2][2]+" miles</td>  ";
+                let wheelOuput= "<td id=bold>Wheels</td><td>"+wheel[2][0]+"</td><td>"+wheel[2][0]+"</td><td>"+wheel[2][1]+"</td>";
+                    
+                document.getElementById("Acc").innerHTML=accelerationOutput;
+                document.getElementById("battery").innerHTML=batteryOutput;
+                document.getElementById("mile").innerHTML=rangeOutput;
+                document.getElementById("wheels").innerHTML=wheelOuput;
+                document.getElementById("carTitle").innerHTML=titleOutput;
+            }
+            
+        }
+
+        let radio = document.getElementsByName("tesla");
+    
+        for(let i = 0; i < radio.length; i++) {
+
+            radio[i].onclick = function() {
+
+                changeInfo(this.value);
+
+            };
+        } 
+        
+        
+    </script>
+
+
+
+
+
+</body>
+</html>
