@@ -1,0 +1,100 @@
+
+ * { 
+	
+	margin: 0;
+	border: 0;
+    } 
+    
+#wrapper{
+    width: 970px;
+    background-color: rgb(21, 36, 75);
+    padding: 10px;
+}
+
+h1{
+    color: rgb(214, 233, 243);
+    background-color: rgb(216, 34, 34);
+    padding: 20px;
+    border-radius: 10px;
+}
+#navigation > a{
+    margin-left: 20px;
+    
+}
+
+#navigation, #content{
+
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+#navigation{
+    background-color: rgba(42, 153, 153, 0.6);
+    width: 220px;
+    margin-top: 20px;
+    min-height: 210px;
+    border-radius: 20px;
+    padding-top: 15px;
+
+}
+
+#content{
+    background-color:rgb(5, 5, 31);
+    width: 726px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#contentHeader{
+    color: rgb(206, 213, 223);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+#contentIntro{
+    padding-left: 20px;
+}
+p,ul{
+    color: white;
+}
+a{
+    color: rgb(109, 228, 228);
+}
+
+#spaceInContent{
+    margin-top: 10px;
+}
+
+#moreInformation{
+    background-color: grey;
+    min-height: 40px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-radius: 15px;
+}
+span{
+    color:rgba(112, 102, 255, 0.918);
+}
+
+.connect1{
+    display:inline;
+}
+.connect2{
+    display: inline;
+}
+.connect3{
+    display: inline;
+}
+.connect4{
+    display: inline;
+}
+.connect5{
+    display: inline;
+}
+.connect6{
+    display: inline;
+}
