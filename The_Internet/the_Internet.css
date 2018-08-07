@@ -1,0 +1,275 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#wrapper{
+    width: 750px;
+    height: 690px;
+    
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.entireInfoBox{
+    background: linear-gradient(rgb(250, 250, 250), rgb(255, 255, 255));
+
+}
+
+.heading img{
+    width: 70px;
+   
+}
+.heading h1{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    font-weight: lighter;
+    color: rgb(36, 36, 36);
+}
+.heading h1 span{
+    color: rgb(12, 89, 204);
+}
+.heading h2{
+    color: white;
+    background: linear-gradient(rgb(24, 81, 134), rgb(88, 127, 179), rgb(24, 81, 134));
+    padding: 10px;
+
+    font-weight: lighter;
+    padding-left: 15px;
+    margin-top: -20px;
+}
+.sideInfoBar{
+    margin-top: 20px;
+    width: 180px;
+}
+
+
+.topSideInfoBar{
+    height: 170px;
+    border-bottom: 1px solid black;
+}
+.topSideInfoBar p{
+    
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 10px;
+
+}
+.topSideInfoBar p span{
+    color: red;
+}
+.topSideInfoBar p+p span{
+    color: rgb(22, 107, 204);
+}
+.topSideInfoBar a{
+    background: linear-gradient(rgb(59, 142, 180), rgb(20, 92, 151));
+    display: block;
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 4px;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 2px rgb(77, 77, 77);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+
+}
+.topSideInfoBar a+a{
+    margin-top: 5px;
+    background: linear-gradient(rgb(255, 174, 0), rgb(228, 122, 0));
+
+}
+
+.adSection{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 4px;
+    
+}
+.adSection #backgoundImg{
+    width: 160px;
+   box-shadow: 2px 2px 2px rgb(104, 104, 104);
+}
+.adSection #sentenceOverlay{
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 10px;
+    font-size: 19px;
+    width: 140px;
+    margin-left: 8px;
+    
+}
+.adSection #ninja{
+    position: absolute;
+    width: 70px;
+    top: 70px;
+    display: block;
+    margin-left: 45px;
+}
+.adSection a{
+    display: block;
+    position: absolute;
+    top: 180px;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    background: linear-gradient(rgb(0, 225, 255), rgb(1, 144, 163));
+    box-shadow: 1px 1px 2px rgb(107, 107, 107);
+    margin-left: 10px;
+}
+.adSection a span{
+    font-size: 8px;
+    font-weight: bold;
+    color:white;
+    
+}
+
+.mainInformationBox, .sideInfoBar{
+    display: inline-block;
+    vertical-align: top;
+}
+.mainInformationBox{
+    font-size: 12px;
+    width: 545px;
+    margin-left: 20px;
+   
+}
+
+
+.theHeader{
+    padding-bottom: 13px;
+    border-bottom: 1px solid rgb(141, 141, 141);
+}
+#leftHeader, #rightHeader{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.theHeader #leftHeader img{
+    width: 16px;
+    display: inline-block;
+}
+.theHeader h3{
+    color: rgb(30, 74, 139);
+    font-weight: lighter;
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2px;
+}
+#leftHeader{
+    margin-top: 10px;
+}
+
+#rightHeader{
+    margin-left: 310px;
+    position: relative;
+}
+.theHeader #rightHeader p{
+    font-size: 9px;
+
+}
+    #dateAvailable{
+        margin-left: 45px;
+    
+    }
+
+    #rightHeader img{
+        width: 35px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #rightHeader #phoneNumber{
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 2px;
+        font-size: 22px;
+        font-weight: bold;
+        color: rgb(10, 188, 233);
+       
+    }
+    #phoneNumber+p{
+        position: absolute;
+        top: 40px;
+        margin-left: 50px;
+       
+    }
+
+
+
+
+.clientsAndServiceInfo h2{
+    color: rgb(27, 92, 177);
+    font-size: 17px;
+    margin-top: 7px;
+}
+.clientsAndServiceInfo span{
+    color: rgb(0, 157, 230);
+}
+
+
+.upperSection h2+p span{
+    color: black;
+    font-weight: bold;
+}
+
+.upperSection ul{
+    margin-left: 35px;
+    margin-top: 5px;
+}
+.upperSection ul li{
+    margin-top: 5px;
+}
+.upperSection img{
+    width:220px;
+    margin-left: 190px;
+    margin-top: 10px;
+}
+
+.middleSection ol li{
+    margin-top: 5px;
+    margin-left: 35px;
+   
+}
+
+
+.bottomSection{
+    border:4px solid rgb(27, 125, 206);
+    border-bottom: 0px;
+    margin-top: 10px;
+    box-shadow: 2px 0px 1px rgb(126, 126, 126);
+    
+}
+
+.bottomSection img{
+    width: 90px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+    .BottomParagraph{
+        display:inline-block;
+        vertical-align: top;
+        width: 410px;
+        margin-left: 6px;
+        margin-top: 3px;
+    }
+    .BottomParagraph span{
+        color: black;
+        font-style: italic;
+    }
+    .BottomParagraph p+p{
+        margin-top: 7px;
+    }
+    .BottomParagraph a{
+        color: rgb(10, 166, 214);
+        text-decoration: none;
+    }
+    
