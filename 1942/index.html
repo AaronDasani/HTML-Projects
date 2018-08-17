@@ -35,7 +35,7 @@
 	];
 
 	let bullets=[];
-	let explosion=[];
+	let explosion={x:0, y:0};
 	let chosenOne=1;
 	let totalScore=0;
 	
@@ -148,8 +148,6 @@
 		}
 	}
 	
-
-	//explosion is being remove in this function...........
 	function BulletCollisionD() {
 		
 		for (let i = 0; i < bullets.length; i++) {
@@ -157,11 +155,11 @@
 			for (let j = 0; j < enemy.length; j++) {
 			
 				if (Math.abs(bullets[i].y-enemy[j].y)<20 && Math.abs(bullets[i].x-enemy[j].x)<30) {
-				
-					explosion.push({x:bullets[i].x-15, y:bullets[i].y-20});
-
-					displayExplosion();
-					explosion.splice(0,1);
+					
+					displayExplosion(bullets[i].x-15,bullets[i].y-20);
+					
+					setTimeout(hideExplosion,1000);
+					
 
 					enemy[j].health-=1;
 
@@ -198,6 +196,7 @@
 			
 		}//end of for loop.....
 	}
+	
 	function heroCollsionD() {
 
 		for (let j = 0; j < enemy.length; j++) {
@@ -211,21 +210,25 @@
 			}
 			
 		}
-			
-		
 	}
 	
 	//Explosion is being display here.............
-	function displayExplosion(){
-		let output="";
+	function displayExplosion(loX,loY){
+		document.getElementById("explode").style.display="block";
 
-		for (let i = 0; i < explosion.length; i++) {
-			
-			output+="<div class='explosion' style='top:"+explosion[i].y+"px; left:"+explosion[i].x+"px;'></div>";
-			
-		} 
+		let output="";
+		explosion.y=loY;
+		explosion.x=loX;
+
+		output+="<div class='explosion' style='top:"+explosion.y+"px; left:"+explosion.x+"px;'></div>";
 		document.getElementById("explode").innerHTML=output;
 		
+	}
+	
+	function hideExplosion() {
+		
+		document.getElementById("explode").style.display="none";
+	
 	}
 	
 	
