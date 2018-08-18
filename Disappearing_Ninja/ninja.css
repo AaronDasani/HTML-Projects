@@ -1,0 +1,41 @@
+
+*{
+    line-height: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#wrapper{
+    margin:  0px auto;
+    width: 880px;
+    background-color: rgb(230, 230, 230);
+    display: grid;
+    grid-gap: 20px;
+    padding:10px;
+    padding-top:25px;
+    margin-top: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    
+}
+img{
+    width:200px;
+    box-shadow: 1px 1px 5px black;
+}
+ul{
+    display: grid;
+    grid-gap: 20px;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+button{
+    display: block;
+    width: 130px;
+    height: 30px;
+    background-color: rgb(241, 241, 241);
+    color: black;
+    box-shadow: 4px 4px 1px rgb(95, 95, 95);
+    border: 2px solid black;
+    transition: 0.5s;
+}
